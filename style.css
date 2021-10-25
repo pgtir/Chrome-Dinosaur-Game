@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ 
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.game-box {
+    width: 500px;
+    height: 200px;
+    border: 1.6px solid black;
+}
+
+.dinosaur img {
+    width: 20px;
+    height: 50px;
+    
+    position: relative;
+    top: 150px;
+}
+
+.animateDino {
+    animation: dino 500ms ;
+}
+
+@keyframes dino {
+    0% {
+        top: 150px;
+    }
+    35% {
+        top:100px;
+    }
+    78% {
+        top:100px;
+    }
+    100% {
+        top: 150px;
+    }
+    
+}
+
+.tree img {
+    width: 20px;
+    height:20px;
+   
+    position: relative;
+    top: 130px;
+    left: 480px;
+    animation: tree 1s infinite linear;
+}
+
+@keyframes tree {
+    0% {
+        left: 480px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+
